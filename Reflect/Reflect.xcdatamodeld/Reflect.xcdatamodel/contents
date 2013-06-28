@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="JHCalendarEvent" representedClassName="JHCalendarEvent" parentEntity="JHEvent" syncable="YES">
+        <attribute name="calendarEventID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="JHCalendarEventSource" representedClassName="JHCalendarEventSource" parentEntity="JHEventSource" syncable="YES"/>
+    <entity name="JHEvent" representedClassName="JHEvent" isAbstract="YES" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventVerb" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="eventSource" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="JHEventSource" inverseName="events" inverseEntity="JHEventSource" syncable="YES"/>
+    </entity>
+    <entity name="JHEventSource" representedClassName="JHEventSource" isAbstract="YES" syncable="YES">
+        <attribute name="lastQuery" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JHEvent" inverseName="eventSource" inverseEntity="JHEvent" syncable="YES"/>
+    </entity>
+    <entity name="JHJournalEvent" representedClassName="JHJournalEvent" parentEntity="JHEvent" syncable="YES"/>
+    <entity name="JHJournalEventSource" representedClassName="JHJournalEventSource" parentEntity="JHEventSource" syncable="YES"/>
+    <entity name="JHMailEvent" representedClassName="JHMailEvent" parentEntity="JHEvent" syncable="YES">
+        <attribute name="mailMessagePath" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="JHMailEventSource" representedClassName="JHMailEventSource" parentEntity="JHEventSource" syncable="YES"/>
+    <entity name="JHReminderEvent" representedClassName="JHReminderEvent" parentEntity="JHEvent" syncable="YES">
+        <attribute name="reminderID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="JHReminderEventSource" representedClassName="JHReminderEventSource" parentEntity="JHEventSource" syncable="YES"/>
+    <entity name="JHSafariEvent" representedClassName="JHSafariEvent" parentEntity="JHEvent" syncable="YES">
+        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="JHSafariEventSource" representedClassName="JHSafariEventSource" parentEntity="JHEventSource" syncable="YES"/>
+    <fetchRequest name="AllEventSources" entity="JHEventSource"/>
+    <fetchRequest name="AllVisibleEvents" entity="JHEvent"/>
+    <elements>
+        <element name="JHCalendarEvent" positionX="160" positionY="192" width="128" height="70"/>
+        <element name="JHCalendarEventSource" positionX="160" positionY="192" width="128" height="55"/>
+        <element name="JHEvent" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="JHEventSource" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="JHJournalEvent" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="JHJournalEventSource" positionX="160" positionY="192" width="128" height="55"/>
+        <element name="JHMailEvent" positionX="160" positionY="192" width="128" height="70"/>
+        <element name="JHMailEventSource" positionX="160" positionY="192" width="128" height="55"/>
+        <element name="JHReminderEvent" positionX="160" positionY="192" width="128" height="70"/>
+        <element name="JHReminderEventSource" positionX="160" positionY="192" width="128" height="55"/>
+        <element name="JHSafariEvent" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="JHSafariEventSource" positionX="160" positionY="192" width="128" height="55"/>
+    </elements>
+</model>

@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4660795A176053C60007228A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46607959176053C60007228A /* Cocoa.framework */; };
+		46607964176053C60007228A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46607962176053C60007228A /* InfoPlist.strings */; };
+		46607966176053C60007228A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46607965176053C60007228A /* main.m */; };
+		4660796A176053C60007228A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 46607968176053C60007228A /* Credits.rtf */; };
+		4660796D176053C60007228A /* JHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4660796C176053C60007228A /* JHAppDelegate.m */; };
+		46607973176053C60007228A /* Reflect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46607971176053C60007228A /* Reflect.xcdatamodeld */; };
+		4660797B176053C60007228A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4660797A176053C60007228A /* SenTestingKit.framework */; };
+		4660797C176053C60007228A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46607959176053C60007228A /* Cocoa.framework */; };
+		46607984176053C60007228A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46607982176053C60007228A /* InfoPlist.strings */; };
+		46607987176053C60007228A /* ReflectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46607986176053C60007228A /* ReflectTests.m */; };
+		4660798F176053C60007228A /* ReflectImporter.mdimporter in Resources */ = {isa = PBXBuildFile; fileRef = 4660798C176053C60007228A /* ReflectImporter.mdimporter */; };
+		46607991176053C60007228A /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46607990176053C60007228A /* CoreServices.framework */; };
+		46607993176053C60007228A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46607992176053C60007228A /* CoreFoundation.framework */; };
+		46607995176053C60007228A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46607994176053C60007228A /* CoreData.framework */; };
+		46607997176053C60007228A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46607996176053C60007228A /* Foundation.framework */; };
+		4660799D176053C60007228A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4660799B176053C60007228A /* InfoPlist.strings */; };
+		4660799F176053C60007228A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4660799E176053C60007228A /* main.c */; };
+		466079A1176053C60007228A /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 466079A0176053C60007228A /* GetMetadataForFile.m */; };
+		466079A4176053C60007228A /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 466079A3176053C60007228A /* MySpotlightImporter.m */; };
+		466079B3176056B50007228A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 466079B2176056B50007228A /* MainMenu.xib */; };
+		466079BF176056E50007228A /* JHJournalEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 466079BE176056E50007228A /* JHJournalEvent.m */; };
+		466079C5176056E60007228A /* JHReminderEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 466079C4176056E60007228A /* JHReminderEvent.m */; };
+		466079CB176056E60007228A /* JHEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 466079CA176056E60007228A /* JHEvent.m */; };
+		466079CE176056E60007228A /* JHCalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 466079CD176056E60007228A /* JHCalendarEvent.m */; };
+		466079D1176056E60007228A /* JHJournalEventSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 466079D0176056E60007228A /* JHJournalEventSource.m */; };
+		466079DD176056E60007228A /* JHReminderEventSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 466079DC176056E60007228A /* JHReminderEventSource.m */; };
+		466079E9176056E60007228A /* JHMailEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 466079E8176056E60007228A /* JHMailEvent.m */; };
+		466079EC176058120007228A /* JHEventSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 466079EB176058120007228A /* JHEventSource.m */; };
+		46607A141760665B0007228A /* JHMailEventSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 46607A131760665B0007228A /* JHMailEventSource.m */; };
+		467202AB17658A6C00BD07E8 /* JHCalendarEventSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 467202AA17658A6C00BD07E8 /* JHCalendarEventSource.m */; };
+		467202AE176594BA00BD07E8 /* CommentsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 467202AC176594BA00BD07E8 /* CommentsIcon.png */; };
+		467202AF176594BA00BD07E8 /* JournalIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 467202AD176594BA00BD07E8 /* JournalIcon.png */; };
+		46806FBB176E7F6500CB59A4 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46806FBA176E7F6500CB59A4 /* EventKit.framework */; };
+		46A759CA1766ABD800D80FFA /* JHEventSourceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46A759C91766ABD800D80FFA /* JHEventSourceController.m */; };
+		46BE7AC91769B2BD00BFD4C8 /* JHSafariEventSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BE7AC81769B2BD00BFD4C8 /* JHSafariEventSource.m */; };
+		46BE7ACC1769B2BD00BFD4C8 /* JHSafariEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BE7ACB1769B2BD00BFD4C8 /* JHSafariEvent.m */; };
+		89F81C2D177D7F5900273363 /* JHPredicateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F81C2C177D7F5800273363 /* JHPredicateHelper.m */; };
+		89F81C30177E20B300273363 /* JHDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F81C2F177E20B300273363 /* JHDateHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4660797D176053C60007228A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4660794E176053C60007228A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46607955176053C60007228A;
+			remoteInfo = Reflect;
+		};
+		4660798D176053C60007228A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4660794E176053C60007228A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4660798B176053C60007228A;
+			remoteInfo = ReflectImporter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46607956176053C60007228A /* Reflect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reflect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46607959176053C60007228A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4660795C176053C60007228A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4660795D176053C60007228A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4660795E176053C60007228A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		46607961176053C60007228A /* Reflect-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Reflect-Info.plist"; sourceTree = "<group>"; };
+		46607963176053C60007228A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		46607965176053C60007228A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46607967176053C60007228A /* Reflect-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reflect-Prefix.pch"; sourceTree = "<group>"; };
+		46607969176053C60007228A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		4660796B176053C60007228A /* JHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHAppDelegate.h; sourceTree = "<group>"; };
+		4660796C176053C60007228A /* JHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHAppDelegate.m; sourceTree = "<group>"; };
+		46607972176053C60007228A /* Reflect.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reflect.xcdatamodel; sourceTree = "<group>"; };
+		46607979176053C60007228A /* ReflectTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReflectTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4660797A176053C60007228A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		46607981176053C60007228A /* ReflectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReflectTests-Info.plist"; sourceTree = "<group>"; };
+		46607983176053C60007228A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		46607985176053C60007228A /* ReflectTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReflectTests.h; sourceTree = "<group>"; };
+		46607986176053C60007228A /* ReflectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReflectTests.m; sourceTree = "<group>"; };
+		4660798C176053C60007228A /* ReflectImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReflectImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		46607990176053C60007228A /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		46607992176053C60007228A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		46607994176053C60007228A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		46607996176053C60007228A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4660799A176053C60007228A /* ReflectImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReflectImporter-Info.plist"; sourceTree = "<group>"; };
+		4660799C176053C60007228A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4660799E176053C60007228A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		466079A0176053C60007228A /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		466079A2176053C60007228A /* MySpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySpotlightImporter.h; sourceTree = "<group>"; };
+		466079A3176053C60007228A /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
+		466079A5176053C60007228A /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
+		466079A6176053C60007228A /* ReflectImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReflectImporter-Prefix.pch"; sourceTree = "<group>"; };
+		466079B2176056B50007228A /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		466079BD176056E50007228A /* JHJournalEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHJournalEvent.h; sourceTree = "<group>"; };
+		466079BE176056E50007228A /* JHJournalEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHJournalEvent.m; sourceTree = "<group>"; };
+		466079C3176056E60007228A /* JHReminderEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHReminderEvent.h; sourceTree = "<group>"; };
+		466079C4176056E60007228A /* JHReminderEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHReminderEvent.m; sourceTree = "<group>"; };
+		466079C9176056E60007228A /* JHEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHEvent.h; sourceTree = "<group>"; };
+		466079CA176056E60007228A /* JHEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHEvent.m; sourceTree = "<group>"; };
+		466079CC176056E60007228A /* JHCalendarEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCalendarEvent.h; sourceTree = "<group>"; };
+		466079CD176056E60007228A /* JHCalendarEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCalendarEvent.m; sourceTree = "<group>"; };
+		466079CF176056E60007228A /* JHJournalEventSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHJournalEventSource.h; sourceTree = "<group>"; };
+		466079D0176056E60007228A /* JHJournalEventSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHJournalEventSource.m; sourceTree = "<group>"; };
+		466079DB176056E60007228A /* JHReminderEventSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHReminderEventSource.h; sourceTree = "<group>"; };
+		466079DC176056E60007228A /* JHReminderEventSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHReminderEventSource.m; sourceTree = "<group>"; };
+		466079E7176056E60007228A /* JHMailEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMailEvent.h; sourceTree = "<group>"; };
+		466079E8176056E60007228A /* JHMailEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMailEvent.m; sourceTree = "<group>"; };
+		466079EA176058120007228A /* JHEventSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHEventSource.h; sourceTree = "<group>"; };
+		466079EB176058120007228A /* JHEventSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHEventSource.m; sourceTree = "<group>"; };
+		46607A121760665B0007228A /* JHMailEventSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMailEventSource.h; sourceTree = "<group>"; };
+		46607A131760665B0007228A /* JHMailEventSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMailEventSource.m; sourceTree = "<group>"; };
+		467202A917658A6C00BD07E8 /* JHCalendarEventSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCalendarEventSource.h; sourceTree = "<group>"; };
+		467202AA17658A6C00BD07E8 /* JHCalendarEventSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCalendarEventSource.m; sourceTree = "<group>"; };
+		467202AC176594BA00BD07E8 /* CommentsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CommentsIcon.png; sourceTree = "<group>"; };
+		467202AD176594BA00BD07E8 /* JournalIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JournalIcon.png; sourceTree = "<group>"; };
+		46806FBA176E7F6500CB59A4 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		46A759C81766ABD800D80FFA /* JHEventSourceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHEventSourceController.h; sourceTree = "<group>"; };
+		46A759C91766ABD800D80FFA /* JHEventSourceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHEventSourceController.m; sourceTree = "<group>"; };
+		46BE7AC71769B2BD00BFD4C8 /* JHSafariEventSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSafariEventSource.h; sourceTree = "<group>"; };
+		46BE7AC81769B2BD00BFD4C8 /* JHSafariEventSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSafariEventSource.m; sourceTree = "<group>"; };
+		46BE7ACA1769B2BD00BFD4C8 /* JHSafariEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSafariEvent.h; sourceTree = "<group>"; };
+		46BE7ACB1769B2BD00BFD4C8 /* JHSafariEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSafariEvent.m; sourceTree = "<group>"; };
+		89F81C2B177D7F5800273363 /* JHPredicateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPredicateHelper.h; sourceTree = "<group>"; };
+		89F81C2C177D7F5800273363 /* JHPredicateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPredicateHelper.m; sourceTree = "<group>"; };
+		89F81C2E177E20B200273363 /* JHDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDateHelper.h; sourceTree = "<group>"; };
+		89F81C2F177E20B300273363 /* JHDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDateHelper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46607953176053C60007228A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46806FBB176E7F6500CB59A4 /* EventKit.framework in Frameworks */,
+				4660795A176053C60007228A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46607975176053C60007228A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4660797B176053C60007228A /* SenTestingKit.framework in Frameworks */,
+				4660797C176053C60007228A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46607989176053C60007228A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46607991176053C60007228A /* CoreServices.framework in Frameworks */,
+				46607993176053C60007228A /* CoreFoundation.framework in Frameworks */,
+				46607995176053C60007228A /* CoreData.framework in Frameworks */,
+				46607997176053C60007228A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4660794D176053C60007228A = {
+			isa = PBXGroup;
+			children = (
+				46806FBA176E7F6500CB59A4 /* EventKit.framework */,
+				4660795F176053C60007228A /* Reflect */,
+				4660797F176053C60007228A /* ReflectTests */,
+				46607998176053C60007228A /* ReflectImporter */,
+				46607958176053C60007228A /* Frameworks */,
+				46607957176053C60007228A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46607957176053C60007228A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46607956176053C60007228A /* Reflect.app */,
+				46607979176053C60007228A /* ReflectTests.octest */,
+				4660798C176053C60007228A /* ReflectImporter.mdimporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46607958176053C60007228A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46607959176053C60007228A /* Cocoa.framework */,
+				4660797A176053C60007228A /* SenTestingKit.framework */,
+				46607990176053C60007228A /* CoreServices.framework */,
+				46607992176053C60007228A /* CoreFoundation.framework */,
+				46607994176053C60007228A /* CoreData.framework */,
+				46607996176053C60007228A /* Foundation.framework */,
+				4660795B176053C60007228A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4660795B176053C60007228A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4660795C176053C60007228A /* AppKit.framework */,
+				4660795D176053C60007228A /* CoreData.framework */,
+				4660795E176053C60007228A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4660795F176053C60007228A /* Reflect */ = {
+			isa = PBXGroup;
+			children = (
+				4660796B176053C60007228A /* JHAppDelegate.h */,
+				4660796C176053C60007228A /* JHAppDelegate.m */,
+				46A759C81766ABD800D80FFA /* JHEventSourceController.h */,
+				46A759C91766ABD800D80FFA /* JHEventSourceController.m */,
+				466079B2176056B50007228A /* MainMenu.xib */,
+				46607971176053C60007228A /* Reflect.xcdatamodeld */,
+				46BE7ACA1769B2BD00BFD4C8 /* JHSafariEvent.h */,
+				46BE7ACB1769B2BD00BFD4C8 /* JHSafariEvent.m */,
+				46BE7AC71769B2BD00BFD4C8 /* JHSafariEventSource.h */,
+				46BE7AC81769B2BD00BFD4C8 /* JHSafariEventSource.m */,
+				467202A917658A6C00BD07E8 /* JHCalendarEventSource.h */,
+				467202AA17658A6C00BD07E8 /* JHCalendarEventSource.m */,
+				46607A121760665B0007228A /* JHMailEventSource.h */,
+				46607A131760665B0007228A /* JHMailEventSource.m */,
+				89F81C2E177E20B200273363 /* JHDateHelper.h */,
+				89F81C2F177E20B300273363 /* JHDateHelper.m */,
+				466079EA176058120007228A /* JHEventSource.h */,
+				89F81C2B177D7F5800273363 /* JHPredicateHelper.h */,
+				89F81C2C177D7F5800273363 /* JHPredicateHelper.m */,
+				466079EB176058120007228A /* JHEventSource.m */,
+				466079E7176056E60007228A /* JHMailEvent.h */,
+				466079E8176056E60007228A /* JHMailEvent.m */,
+				466079DB176056E60007228A /* JHReminderEventSource.h */,
+				466079DC176056E60007228A /* JHReminderEventSource.m */,
+				466079CF176056E60007228A /* JHJournalEventSource.h */,
+				466079D0176056E60007228A /* JHJournalEventSource.m */,
+				466079CC176056E60007228A /* JHCalendarEvent.h */,
+				466079CD176056E60007228A /* JHCalendarEvent.m */,
+				466079C9176056E60007228A /* JHEvent.h */,
+				466079CA176056E60007228A /* JHEvent.m */,
+				466079C3176056E60007228A /* JHReminderEvent.h */,
+				466079C4176056E60007228A /* JHReminderEvent.m */,
+				466079BD176056E50007228A /* JHJournalEvent.h */,
+				466079BE176056E50007228A /* JHJournalEvent.m */,
+				46607960176053C60007228A /* Supporting Files */,
+			);
+			path = Reflect;
+			sourceTree = "<group>";
+		};
+		46607960176053C60007228A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				467202AC176594BA00BD07E8 /* CommentsIcon.png */,
+				467202AD176594BA00BD07E8 /* JournalIcon.png */,
+				46607961176053C60007228A /* Reflect-Info.plist */,
+				46607962176053C60007228A /* InfoPlist.strings */,
+				46607965176053C60007228A /* main.m */,
+				46607967176053C60007228A /* Reflect-Prefix.pch */,
+				46607968176053C60007228A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4660797F176053C60007228A /* ReflectTests */ = {
+			isa = PBXGroup;
+			children = (
+				46607985176053C60007228A /* ReflectTests.h */,
+				46607986176053C60007228A /* ReflectTests.m */,
+				46607980176053C60007228A /* Supporting Files */,
+			);
+			path = ReflectTests;
+			sourceTree = "<group>";
+		};
+		46607980176053C60007228A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46607981176053C60007228A /* ReflectTests-Info.plist */,
+				46607982176053C60007228A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46607998176053C60007228A /* ReflectImporter */ = {
+			isa = PBXGroup;
+			children = (
+				466079A0176053C60007228A /* GetMetadataForFile.m */,
+				466079A2176053C60007228A /* MySpotlightImporter.h */,
+				466079A3176053C60007228A /* MySpotlightImporter.m */,
+				466079A5176053C60007228A /* Importer Read Me.txt */,
+				46607999176053C60007228A /* Supporting Files */,
+			);
+			path = ReflectImporter;
+			sourceTree = "<group>";
+		};
+		46607999176053C60007228A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4660799A176053C60007228A /* ReflectImporter-Info.plist */,
+				4660799B176053C60007228A /* InfoPlist.strings */,
+				4660799E176053C60007228A /* main.c */,
+				466079A6176053C60007228A /* ReflectImporter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46607955176053C60007228A /* Reflect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 466079AC176053C60007228A /* Build configuration list for PBXNativeTarget "Reflect" */;
+			buildPhases = (
+				46607952176053C60007228A /* Sources */,
+				46607953176053C60007228A /* Frameworks */,
+				46607954176053C60007228A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4660798E176053C60007228A /* PBXTargetDependency */,
+			);
+			name = Reflect;
+			productName = Reflect;
+			productReference = 46607956176053C60007228A /* Reflect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46607978176053C60007228A /* ReflectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 466079AF176053C60007228A /* Build configuration list for PBXNativeTarget "ReflectTests" */;
+			buildPhases = (
+				46607974176053C60007228A /* Sources */,
+				46607975176053C60007228A /* Frameworks */,
+				46607976176053C60007228A /* Resources */,
+				46607977176053C60007228A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4660797E176053C60007228A /* PBXTargetDependency */,
+			);
+			name = ReflectTests;
+			productName = ReflectTests;
+			productReference = 46607979176053C60007228A /* ReflectTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4660798B176053C60007228A /* ReflectImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 466079A9176053C60007228A /* Build configuration list for PBXNativeTarget "ReflectImporter" */;
+			buildPhases = (
+				46607988176053C60007228A /* Sources */,
+				46607989176053C60007228A /* Frameworks */,
+				4660798A176053C60007228A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReflectImporter;
+			productName = ReflectImporter;
+			productReference = 4660798C176053C60007228A /* ReflectImporter.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4660794E176053C60007228A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JH;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Jeremiah Hall";
+			};
+			buildConfigurationList = 46607951176053C60007228A /* Build configuration list for PBXProject "Reflect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4660794D176053C60007228A;
+			productRefGroup = 46607957176053C60007228A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46607955176053C60007228A /* Reflect */,
+				46607978176053C60007228A /* ReflectTests */,
+				4660798B176053C60007228A /* ReflectImporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46607954176053C60007228A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46607964176053C60007228A /* InfoPlist.strings in Resources */,
+				4660796A176053C60007228A /* Credits.rtf in Resources */,
+				4660798F176053C60007228A /* ReflectImporter.mdimporter in Resources */,
+				466079B3176056B50007228A /* MainMenu.xib in Resources */,
+				467202AE176594BA00BD07E8 /* CommentsIcon.png in Resources */,
+				467202AF176594BA00BD07E8 /* JournalIcon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46607976176053C60007228A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46607984176053C60007228A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4660798A176053C60007228A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4660799D176053C60007228A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46607977176053C60007228A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46607952176053C60007228A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46607966176053C60007228A /* main.m in Sources */,
+				4660796D176053C60007228A /* JHAppDelegate.m in Sources */,
+				46607973176053C60007228A /* Reflect.xcdatamodeld in Sources */,
+				466079BF176056E50007228A /* JHJournalEvent.m in Sources */,
+				466079C5176056E60007228A /* JHReminderEvent.m in Sources */,
+				466079CB176056E60007228A /* JHEvent.m in Sources */,
+				466079CE176056E60007228A /* JHCalendarEvent.m in Sources */,
+				466079D1176056E60007228A /* JHJournalEventSource.m in Sources */,
+				466079DD176056E60007228A /* JHReminderEventSource.m in Sources */,
+				466079E9176056E60007228A /* JHMailEvent.m in Sources */,
+				466079EC176058120007228A /* JHEventSource.m in Sources */,
+				46607A141760665B0007228A /* JHMailEventSource.m in Sources */,
+				467202AB17658A6C00BD07E8 /* JHCalendarEventSource.m in Sources */,
+				46A759CA1766ABD800D80FFA /* JHEventSourceController.m in Sources */,
+				46BE7AC91769B2BD00BFD4C8 /* JHSafariEventSource.m in Sources */,
+				46BE7ACC1769B2BD00BFD4C8 /* JHSafariEvent.m in Sources */,
+				89F81C2D177D7F5900273363 /* JHPredicateHelper.m in Sources */,
+				89F81C30177E20B300273363 /* JHDateHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46607974176053C60007228A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46607987176053C60007228A /* ReflectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46607988176053C60007228A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4660799F176053C60007228A /* main.c in Sources */,
+				466079A1176053C60007228A /* GetMetadataForFile.m in Sources */,
+				466079A4176053C60007228A /* MySpotlightImporter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4660797E176053C60007228A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46607955176053C60007228A /* Reflect */;
+			targetProxy = 4660797D176053C60007228A /* PBXContainerItemProxy */;
+		};
+		4660798E176053C60007228A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4660798B176053C60007228A /* ReflectImporter */;
+			targetProxy = 4660798D176053C60007228A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46607962176053C60007228A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46607963176053C60007228A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		46607968176053C60007228A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46607969176053C60007228A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		46607982176053C60007228A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46607983176053C60007228A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4660799B176053C60007228A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4660799C176053C60007228A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		466079A7176053C60007228A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		466079A8176053C60007228A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		466079AA176053C60007228A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReflectImporter/ReflectImporter-Prefix.pch";
+				INFOPLIST_FILE = "ReflectImporter/ReflectImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Debug;
+		};
+		466079AB176053C60007228A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReflectImporter/ReflectImporter-Prefix.pch";
+				INFOPLIST_FILE = "ReflectImporter/ReflectImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
+		466079AD176053C60007228A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Reflect/Reflect-Prefix.pch";
+				INFOPLIST_FILE = "Reflect/Reflect-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		466079AE176053C60007228A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Reflect/Reflect-Prefix.pch";
+				INFOPLIST_FILE = "Reflect/Reflect-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		466079B0176053C60007228A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Reflect.app/Contents/MacOS/Reflect";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Reflect/Reflect-Prefix.pch";
+				INFOPLIST_FILE = "ReflectTests/ReflectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		466079B1176053C60007228A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Reflect.app/Contents/MacOS/Reflect";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Reflect/Reflect-Prefix.pch";
+				INFOPLIST_FILE = "ReflectTests/ReflectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46607951176053C60007228A /* Build configuration list for PBXProject "Reflect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				466079A7176053C60007228A /* Debug */,
+				466079A8176053C60007228A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		466079A9176053C60007228A /* Build configuration list for PBXNativeTarget "ReflectImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				466079AA176053C60007228A /* Debug */,
+				466079AB176053C60007228A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		466079AC176053C60007228A /* Build configuration list for PBXNativeTarget "Reflect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				466079AD176053C60007228A /* Debug */,
+				466079AE176053C60007228A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		466079AF176053C60007228A /* Build configuration list for PBXNativeTarget "ReflectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				466079B0176053C60007228A /* Debug */,
+				466079B1176053C60007228A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		46607971176053C60007228A /* Reflect.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				46607972176053C60007228A /* Reflect.xcdatamodel */,
+			);
+			currentVersion = 46607972176053C60007228A /* Reflect.xcdatamodel */;
+			path = Reflect.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4660794E176053C60007228A /* Project object */;
+}
