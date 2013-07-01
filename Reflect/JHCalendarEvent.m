@@ -8,6 +8,7 @@
 
 #import <EventKit/EventKit.h>
 #import "JHCalendarEvent.h"
+#import "JHCalendarEventSource.h"
 
 static NSString *calendarAppPath = @"/Applications/Calendar.app";
 
@@ -20,9 +21,7 @@ static NSString *calendarAppPath = @"/Applications/Calendar.app";
 }
 
 - (void)open {
-    EKEventStore *eventStore = [[EKEventStore alloc] initWithAccessToEntityTypes:EKEntityMaskEvent];
-    EKCalendarItem *currentEvent = [eventStore calendarItemWithIdentifier:[self calendarEventID]];
-    [[NSWorkspace sharedWorkspace] openURL:[currentEvent URL]];
+    [self.eventSource openEvent:self];
 }
 
 @end

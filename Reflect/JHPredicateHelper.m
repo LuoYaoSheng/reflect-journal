@@ -28,6 +28,10 @@ static NSUInteger options = (NSCaseInsensitivePredicateOption|NSDiacriticInsensi
     return [NSComparisonPredicate predicateWithLeftExpression:[NSExpression expressionForKeyPath:@"kMDItemContentCreationDate"] rightExpression:[NSExpression expressionForConstantValue:since] modifier:NSDirectPredicateModifier type:NSGreaterThanOrEqualToPredicateOperatorType options:options];
 }
 
++ (NSPredicate *)getCalUIDPredicate:(NSString *)uid {
+    return [NSComparisonPredicate predicateWithLeftExpression:[NSExpression expressionForKeyPath:@"com_apple_iCal_Bookmark_SharedUID"] rightExpression:[NSExpression expressionForConstantValue:uid] modifier:NSDirectPredicateModifier type:NSEqualToPredicateOperatorType options:options];
+}
+
 + (NSPredicate *)getAddedPredicateAfter:(NSDate *)after andBefore:(NSDate *)before {
     NSPredicate *afterPred = [NSComparisonPredicate predicateWithLeftExpression:[NSExpression expressionForKeyPath:@"kMDItemDateAdded"] rightExpression:[NSExpression expressionForConstantValue:after] modifier:NSDirectPredicateModifier type:NSGreaterThanOrEqualToPredicateOperatorType options:options];
     NSPredicate *beforePred = [NSComparisonPredicate predicateWithLeftExpression:[NSExpression expressionForKeyPath:@"kMDItemDateAdded"] rightExpression:[NSExpression expressionForConstantValue:before] modifier:NSDirectPredicateModifier type:NSLessThanOrEqualToPredicateOperatorType options:options];

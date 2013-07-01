@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import "JHEvent.h"
-#import "JHMailEventSource.h"
 
 
 @interface JHMailEvent : JHEvent

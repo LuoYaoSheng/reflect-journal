@@ -21,4 +21,8 @@
     //overriden by subclasses    
 }
 
+- (void)openEvent:(JHEvent *)ev {
+    
+}
+
 @end

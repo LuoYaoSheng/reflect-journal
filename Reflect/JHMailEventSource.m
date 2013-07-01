@@ -131,4 +131,9 @@ static NSString *mailAppPath = @"/Applications/Mail.app";
     return [NSCompoundPredicate andPredicateWithSubpredicates:@[contentTypePredicate, createdDatePredicate]];
 }
 
+- (void)openEvent:(JHEvent *)ev {
+    JHMailEvent *sev = (JHMailEvent *)ev;
+    [[NSWorkspace sharedWorkspace] openFile:[sev mailMessagePath]];
+}
+
 @end

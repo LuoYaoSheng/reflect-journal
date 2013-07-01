@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import "JHEvent.h"
-#import "JHCalendarEventSource.h"
 #import <EventKit/EventKit.h>
 
 @interface JHCalendarEvent : JHEvent

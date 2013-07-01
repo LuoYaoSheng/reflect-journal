@@ -8,6 +8,7 @@
 
 #import "JHCalendarEventSource.h"
 #import "JHCalendarEvent.h"
+#import "JHPredicateHelper.h"
 #import <EventKit/EventKit.h>
 
 @implementation JHCalendarEventSource

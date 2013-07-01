@@ -7,7 +7,7 @@
 //
 
 #import "JHMailEvent.h"
-
+#import "JHMailEventSource.h"
 
 @implementation JHMailEvent
 
@@ -17,4 +17,7 @@
     return [[NSWorkspace sharedWorkspace] iconForFile:[self mailMessagePath]];
 }
 
+- (void)open {
+    [self.eventSource openEvent:self];
+}
 @end

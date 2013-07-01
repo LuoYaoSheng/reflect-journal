@@ -65,4 +65,8 @@
     return related;
 }
 
+- (void)open {
+    //
+}
+
 @end

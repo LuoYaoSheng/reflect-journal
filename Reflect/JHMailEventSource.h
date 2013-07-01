@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import "JHEventSource.h"
+#import "JHMailEvent.h"
 
 
 @interface JHMailEventSource : JHEventSource <NSMetadataQueryDelegate>
@@ -20,6 +21,5 @@
 - (void)activate;
 - (void)deactivate;
 - (void)queryNote:(NSNotification *)note;
-
 
 @end

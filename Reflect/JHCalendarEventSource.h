@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import "JHEventSource.h"
+#import "JHCalendarEvent.h"
 #import <EventKit/EventKit.h>
 
 @interface JHCalendarEventSource : JHEventSource <NSMetadataQueryDelegate>

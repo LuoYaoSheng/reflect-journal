@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import "JHEventSource.h"
-
+#import "JHReminderEvent.h"
 
 @interface JHReminderEventSource : JHEventSource  <NSMetadataQueryDelegate>
 

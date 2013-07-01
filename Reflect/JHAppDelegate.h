@@ -25,4 +25,8 @@
 
 @property (weak) IBOutlet NSArrayController *journalArrayController;
 
+- (void)relatedDoubleClicked;
+@property (weak) IBOutlet NSTableView *relatedTableView;
+@property (weak) IBOutlet NSArrayController *relatedArrayController;
+
 @end

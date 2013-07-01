@@ -3458,6 +3458,22 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
+						<string key="label">relatedTableView</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="229488869"/>
+					</object>
+					<int key="connectionID">2733</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">relatedArrayController</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="557966666"/>
+					</object>
+					<int key="connectionID">2734</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
 						<string key="label">textField</string>
 						<object class="NSTableCellView" key="source" id="969130065">
 							<nil key="NSNextResponder"/>
@@ -3767,7 +3783,7 @@
 						<string key="label">content: arrangedObjects</string>
 						<reference key="source" ref="229488869"/>
 						<reference key="destination" ref="557966666"/>
-						<object class="NSNibBindingConnector" key="connector">
+						<object class="NSNibBindingConnector" key="connector" id="823555720">
 							<reference key="NSSource" ref="229488869"/>
 							<reference key="NSDestination" ref="557966666"/>
 							<string key="NSLabel">content: arrangedObjects</string>
@@ -3777,6 +3793,23 @@
 						</object>
 					</object>
 					<int key="connectionID">2562</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">selectionIndexes: selectionIndexes</string>
+						<reference key="source" ref="229488869"/>
+						<reference key="destination" ref="557966666"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="229488869"/>
+							<reference key="NSDestination" ref="557966666"/>
+							<string key="NSLabel">selectionIndexes: selectionIndexes</string>
+							<string key="NSBinding">selectionIndexes</string>
+							<string key="NSKeyPath">selectionIndexes</string>
+							<reference key="NSPreviousConnector" ref="823555720"/>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">2724</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -8524,7 +8557,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">2713</int>
+			<int key="maxID">2734</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -8544,12 +8577,22 @@
 					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="journalArrayController">NSArrayController</string>
+						<string key="relatedArrayController">NSArrayController</string>
+						<string key="relatedTableView">NSTableView</string>
 						<string key="window">NSWindow</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="journalArrayController">
 							<string key="name">journalArrayController</string>
 							<string key="candidateClassName">NSArrayController</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="relatedArrayController">
+							<string key="name">relatedArrayController</string>
+							<string key="candidateClassName">NSArrayController</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="relatedTableView">
+							<string key="name">relatedTableView</string>
+							<string key="candidateClassName">NSTableView</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="window">
 							<string key="name">window</string>

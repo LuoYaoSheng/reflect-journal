@@ -17,11 +17,12 @@
 
 - (void)activate {
     
-    _query = [[NSMetadataQuery alloc] init];
+    self.query = [[NSMetadataQuery alloc] init];
     
     if ([self lastQuery] == nil)
         [self setLastQuery:[JHDateHelper oneHourAgo]];
     
+    NSLog(@"%@", [self lastQuery]);
     NSPredicate *createdAfter = [JHPredicateHelper getUpdatedSincePredicate:[self lastQuery]];
     
     NSPredicate *safariHistory = [JHPredicateHelper getContentTypePredicate:@"com.apple.safari.history"];
@@ -31,10 +32,10 @@
     
     NSPredicate *pred = [NSCompoundPredicate andPredicateWithSubpredicates:@[createdAfter, safari]];
     
-    [_query setPredicate:pred];
-    [_query setSearchScopes:@[NSMetadataQueryUserHomeScope]];
-    [_query setNotificationBatchingInterval:5];
-    [_query startQuery];
+    [self.query setPredicate:pred];
+    [self.query setSearchScopes:@[NSMetadataQueryUserHomeScope]];
+    [self.query setNotificationBatchingInterval:5];
+    [self.query startQuery];
     
     NSNotificationCenter *nf = [NSNotificationCenter defaultCenter];
     [nf addObserver:self selector:@selector(safariCallback:) name:nil object:self.query];
@@ -43,6 +44,7 @@
 - (void)processQueryResults:(NSNotification *)note {
     for (NSMetadataItem *item in [[self query] results]) {
         JHSafariEvent *safariEvent = [[JHSafariEvent alloc] initWithEntity:[NSEntityDescription entityForName:[JHSafariEvent className] inManagedObjectContext:[self managedObjectContext]] insertIntoManagedObjectContext:[self managedObjectContext]];
+        [safariEvent setEventSource:self];
         [safariEvent setPath:[item valueForAttribute:NSMetadataItemPathKey]];
         [safariEvent setBody:[item valueForAttribute:NSMetadataItemDisplayNameKey]];
         [safariEvent setTimestamp:[item valueForAttribute:NSMetadataItemFSContentChangeDateKey]];
@@ -61,6 +63,7 @@
         NSArray *items = [userInfo objectForKey:@"kMDQueryUpdateAddedItems"];
         for (NSMetadataItem *item in items) {
             JHSafariEvent *safariEvent = [[JHSafariEvent alloc] initWithEntity:[NSEntityDescription entityForName:[JHSafariEvent className] inManagedObjectContext:[self managedObjectContext]] insertIntoManagedObjectContext:[self managedObjectContext]];
+            [safariEvent setEventSource:self];
             [safariEvent setPath:[item valueForAttribute:NSMetadataItemPathKey]];
             [safariEvent setBody:[item valueForAttribute:NSMetadataItemDisplayNameKey]];
             [safariEvent setTimestamp:[item valueForAttribute:NSMetadataItemFSContentChangeDateKey]];
@@ -85,6 +88,10 @@
         [self setLastQuery:[NSDate date]];
         [self processQueryUpdate:note];
     }
+}
+
++ (void)openEvent:(JHSafariEvent *)sev {
+    [[NSWorkspace sharedWorkspace] openFile:[sev path]];
 }
 
 @end

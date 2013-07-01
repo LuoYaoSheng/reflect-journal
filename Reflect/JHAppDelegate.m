@@ -21,12 +21,20 @@
 
 @synthesize eventSourceController = _eventSourceController;
 
+- (void)relatedDoubleClicked {
+    NSArray *selectedRelated = [self.relatedArrayController selectedObjects];
+    for (JHEvent *event in selectedRelated) {
+        [event open];
+    }
+}
+
 - (NSArray *)eventSortDescriptors {
     return [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"timestamp" ascending:NO]];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    [self.relatedTableView setDoubleAction:@selector(relatedDoubleClicked)];
     _eventSourceController = [[JHEventSourceController alloc] initWithContext:[self managedObjectContext]];
 }
 

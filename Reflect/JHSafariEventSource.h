@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import "JHEventSource.h"
-
+#import "JHSafariEvent.h"
 
 @interface JHSafariEventSource : JHEventSource
 
 @property (strong) NSMetadataQuery *query;
+
++ (void)openEvent:(JHSafariEvent *)sev;
 
 @end

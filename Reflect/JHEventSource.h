@@ -19,6 +19,8 @@
 - (void)activate;
 - (void)deactivate;
 
+- (void)openEvent:(JHEvent *)ev;
+
 @end
 
 @interface JHEventSource (CoreDataGeneratedAccessors)

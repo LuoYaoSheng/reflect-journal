@@ -7,7 +7,7 @@
 //
 
 #import "JHSafariEvent.h"
-
+#import "JHSafariEventSource.h"
 
 @implementation JHSafariEvent
 
@@ -15,6 +15,10 @@
 
 - (NSImage *)icon {
     return [[NSWorkspace sharedWorkspace] iconForFile:[self path]];
+}
+
+- (void)open {
+    [JHSafariEventSource openEvent:self];
 }
 
 @end

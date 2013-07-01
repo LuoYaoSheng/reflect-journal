@@ -22,6 +22,8 @@
 
 + (NSPredicate *)getContentTypePredicate:(NSString *)type;
 
++ (NSPredicate *)getCalUIDPredicate:(NSString *)uid;
+
 + (NSPredicate *)getDisplayNamePredicate:(NSString *)name;
 + (NSPredicate *)getKindPredicate:(NSString *)kind;
 

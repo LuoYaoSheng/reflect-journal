@@ -10,6 +10,7 @@
 #import "JHReminderEventSource.h"
 #import "JHReminderEvent.h"
 #import "JHDateHelper.h"
+#import "JHPredicateHelper.h"
 
 static NSString *reminderAppPath = @"/Applications/Reminders.app";
 

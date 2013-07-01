@@ -7,6 +7,7 @@
 //
 
 #import "JHReminderEvent.h"
+#import "JHReminderEventSource.h"
 
 static NSString *reminderAppPath = @"/Applications/Reminders.app";
 
@@ -16,6 +17,10 @@ static NSString *reminderAppPath = @"/Applications/Reminders.app";
 
 - (NSImage *)icon {
     return [[NSWorkspace sharedWorkspace] iconForFile:reminderAppPath];
+}
+
+- (void)open {
+    [self.eventSource openEvent:self];
 }
 
 @end
