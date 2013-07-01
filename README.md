@@ -9,8 +9,6 @@ This application is still experimental and is not sandboxed.
 
 TODO: Refactor related events access
 
-TODO: Double click on related event to open resource
-
 TODO: Implement Spotlight Importer so that journal entries are searchable via Spotlight
 
 The MIT License (MIT)
